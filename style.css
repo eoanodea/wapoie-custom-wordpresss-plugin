@@ -1,0 +1,118 @@
+/* Custom Dashboard addition Styles */
+
+.dashboard-box-container {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.dashboard-box-container .dashboard-box {
+  padding: 20px 40px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-box-container .dashboard-box a {
+  text-decoration: none;
+}
+
+.dashboard-box-container .dashboard-box a:hover {
+  text-decoration: none;
+}
+
+.account-button-container {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.account-button {
+  background-color: #59bcb8;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+
+.account-button:hover {
+  background-color: #3cbfc8b3;
+}
+
+.select-list {
+  display: flex;
+  flex-direction: column;
+  -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.2s; /* Firefox < 16 */
+  -ms-animation: fadein 0.2s; /* Internet Explorer */
+  -o-animation: fadein 0.2s; /* Opera < 12.1 */
+  animation: fadein 0.2s;
+}
+
+.inner-form-wrapper * {
+  -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.2s; /* Firefox < 16 */
+  -ms-animation: fadein 0.2s; /* Internet Explorer */
+  -o-animation: fadein 0.2s; /* Opera < 12.1 */
+  animation: fadein 0.2s;
+}
+
+.select-again-button {
+  margin: 20px 0;
+}
+
+.select-option {
+  display: flex;
+  padding: 10px;
+}
+
+.form-wrapper {
+  min-height: 40vh;
+  padding: 20px;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"],
+.form-wrapper textarea {
+  border-color: #ffffff !important;
+  border-width: 0px 0px 1px 0px !important;
+  border-radius: 0px !important;
+  margin: 15px 0;
+  font-size: 1em;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.form-wrapper input::placeholder,
+.form-wrapper textarea::placeholder {
+  color: #fff;
+}
+
+.form-wrapper button[type="submit"] {
+  background-color: #efc7c2;
+  color: #ffffff;
+  box-shadow: 6px 4px 0 0 rgba(239, 199, 194, 0.6);
+  transition: 0.3s ease;
+  max-width: 20%;
+}
+
+.form-wrapper p {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.select-option label {
+  padding-left: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
