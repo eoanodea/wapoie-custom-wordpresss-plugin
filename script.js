@@ -73,8 +73,7 @@ function render(selectedFormIndex, formArr, $) {
  */
 function generateQuestionSelectList(arr) {
   let result = '<div class="select-list">';
-  result +=
-    '<h2>Select a reason to contact us<span class="accent">.</span></h2>';
+  result += '<h2>Contact Us<span class="accent">.</span></h2>';
   arr.forEach((dat, i) => {
     result += `<span class="select-option"><input ${i === 0 && "checked"} id=${
       dat.id
