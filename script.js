@@ -47,6 +47,7 @@ function selectOption($) {
  */
 function render(selectedFormIndex, formArr, $) {
   const formWrapper = $(".form-wrapper");
+  const radioWrapper = $(".radio-wrapper");
   //Append to the shortcode div
   if (selectedFormIndex) {
     formWrapper.empty();
@@ -55,7 +56,8 @@ function render(selectedFormIndex, formArr, $) {
   } else {
     formWrapper.empty();
     const result = generateQuestionSelectList(formArr);
-    formWrapper.append(result);
+    radioWrapper.append(result);
+    generateFormShortCode(0, formArr, $);
 
     $("input:radio[name=form-option]").change(function (e) {
       console.log("input select", e.target.value);
@@ -71,9 +73,14 @@ function render(selectedFormIndex, formArr, $) {
  */
 function generateQuestionSelectList(arr) {
   let result = '<div class="select-list">';
-  result += "<h2>Select a reason to contact us</h2>";
+  result +=
+    '<h2>Select a reason to contact us<span class="accent">.</span></h2>';
   arr.forEach((dat, i) => {
-    result += `<span class="select-option"><input id=${dat.id}  type="radio" name="form-option" value="${i}" required="required"><label for="${dat.id}">${dat.value}</label></span>`;
+    result += `<span class="select-option"><input ${i === 0 && "checked"} id=${
+      dat.id
+    }  type="radio" name="form-option" value="${i}" required="required"><label for="${
+      dat.id
+    }">${dat.value}</label></span>`;
   });
 
   return (result += "</div>");
@@ -98,13 +105,13 @@ function generateFormShortCode(formI, arr, $) {
     },
     success: function (res) {
       result += res;
-      result += '<button class="select-again-button">Select Again</button>';
+      // result += '<button class="select-again-button">Select Again</button>';
     },
     error: function (err) {
       console.log("error!", err);
       result +=
         "<p>There was a problem loading your form, please try again</p>";
-      result += '<button class="select-again-button">Select Again</button>';
+      // result += '<button class="select-again-button">Select Again</button>';
     },
   }).always(function () {
     $(".form-wrapper").empty();

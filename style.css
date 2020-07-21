@@ -40,12 +40,18 @@
 
 .select-list {
   display: flex;
+  padding: 20px;
   flex-direction: column;
   -webkit-animation: fadein 0.2s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 0.2s; /* Firefox < 16 */
   -ms-animation: fadein 0.2s; /* Internet Explorer */
   -o-animation: fadein 0.2s; /* Opera < 12.1 */
   animation: fadein 0.2s;
+}
+
+.select-list h2 {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .inner-form-wrapper * {
@@ -105,7 +111,7 @@
 .select-option label {
   padding-left: 5px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 @keyframes fadein {

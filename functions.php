@@ -6,7 +6,7 @@
  * Description: Remove the billing address fields for free virtual orders, and adds order links to order confirmation emails
  * Author: Eoan O'Dea
  * Author URI: https://wspace.ie/
- * Version: 4.4
+ * Version: 4.7
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -160,7 +160,7 @@ function create_button($link, $text)
  */
 function wpc7_extension_shortcode()
 {
-	return '<div id="form-wrapper none-selected" class="form-wrapper"></div>';
+	return '<div class="radio-wrapper"></div><div id="form-wrapper none-selected" class="form-wrapper"></div>';
 }
 
 function get_shortcode_contact_form()
