@@ -6,7 +6,7 @@
  * Description: Remove the billing address fields for free virtual orders, and adds order links to order confirmation emails
  * Author: Eoan O'Dea
  * Author URI: https://wspace.ie/
- * Version: 4.7
+ * Version: 4.9
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
