@@ -51,7 +51,10 @@
 
 .select-list h2 {
   font-weight: 700;
-  text-transform: uppercase;
+}
+
+.select-list p {
+  font-weight: 600;
 }
 
 .inner-form-wrapper * {
